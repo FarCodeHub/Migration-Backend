@@ -27,7 +27,7 @@ namespace Migration.Controllers
         [HttpGet]
         public async Task<IActionResult> GetPersons()
         {
-            var result = _personQueries.GetPersons();
+            var result =await _personQueries.GetPersons();
             return Ok(result);
     }
     }
